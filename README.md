@@ -51,18 +51,27 @@ Your assignment is to use Built-In java classes to:
 1. Look up the latitude and longitude coordinates in any online map you can find via Google.
 1. Screenshot the map and add it into the **images** folder of this project.
 1. Last add image markdown below this line to load your map image (Hint: Example image Markdown is just a couple lines above this).
+    ![Screenshot(1)](images/Screenshot%20(1).png)
+
 
 ## PART 3 - Code Scanning and Interpretation
 
 * Look at the getHiddenSecrets method and identify the following parts by editing this README.md and providing your answers:
     * What is the **access modifer** (e.g. public, private, protected)?
+  The access modifier is public static.
     * Is it a **Class method** or an **object Instance method**, how do you know?
+  The Class method or object Instance method is getHiddenSecrets. The way I know is that it follows the void return type and is also highlighted much like the "main" method is. 
     * What is its **return data-type**?
+  The return data-type is void. 
     * Does it require any **arguments** to call it, and if so, how many **parameters** and of what **data-type**?
+  It does require arguments to call it, there are two parameters to call it and one is the File class type and file object type. 
 * Scan line by line through the code and try to determine how it works?
     * What is familiar to you?
+  What looks familiar is the Class types and object types that are being created, like *Metadata metadata* and *Directory directory*. It's interesting to just hover over the Class and object types and have IntelliJ pop up little windows of information. Another familiar class type is the FileInputStream type and the other System.out.println for the different errors.
     * What is not familiar to you?
+  What's not familiar are the _try_, _catch_, and _for_ methods and what they do. I think I loosely understand that the *catch* and *throw* methods are somehow related because IntelliJ was talking about how it will "throw" out errors if the syntax or file types aren't correct. 
     * Do the **for** loops make sense, and if so, tell me what you think they do?
+  Kind of but not really. Looking at it, it looks like it's looping for the directories and other information like tags for the image provided that's given by the Metadata Extractor. Then spits this into the System.out.format("[%s]-%s = %s%n" .... ) with the information converted to Strings.
 
 ## PART 4 - Turn in
 
