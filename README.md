@@ -56,13 +56,32 @@ Your assignment is to use Built-In java classes to:
 
 * Look at the getHiddenSecrets method and identify the following parts by editing this README.md and providing your answers:
     * What is the **access modifer** (e.g. public, private, protected)?
-    * Is it a **Class method** or an **object Instance method**, how do you know?
-    * What is its **return data-type**?
-    * Does it require any **arguments** to call it, and if so, how many **parameters** and of what **data-type**?
+  
+    * Private
+  
+    * Is it a **Class method** or an **object Instance method**, how do you know? 
+  
+    * It is an Object Instance method, not to sure really
+
+  * What is its **return data-type**?
+
+  * It is an Object
+
+  * Does it require any **arguments** to call it, and if so, how many **parameters** and of what **data-type**?
+  
+  * It requires one parameter,I think.
+  
 * Scan line by line through the code and try to determine how it works?
     * What is familiar to you?
+    * I am familiar with the scanner, strings, println, main line, and creating an object, but that's sort of it
     * What is not familiar to you?
+  
+    * The catch which I could assume what it does, the try and also the for.
+  
     * Do the **for** loops make sense, and if so, tell me what you think they do?
+    * They don't make sense to me.
+
+Also in the first instructions you tell us to add the metadata-extractor, but it is already here in this document, I went ahead and added it again just to show I know how to do it in case that was what you were looking for.
 
 ## PART 4 - Turn in
 
