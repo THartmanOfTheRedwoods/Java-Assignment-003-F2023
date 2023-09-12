@@ -9,7 +9,10 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 
 // PUT YOUR IMPORTS HERE
-
+import com.drew.metadata.Metadata;
+import java.nio.file.Paths;
+import java.util.Scanner;
+import java.nio.file.Path;
 public class HiddenSecrets {
     public static void getHiddenSecrets(File file) {
         try {
@@ -42,5 +45,11 @@ public class HiddenSecrets {
         // convert that string into A Path type using Paths class,
         // and call the getHiddenSecrets method to get the file's meta-data
         // HERE
+        Scanner s = new Scanner(System.in);
+        System.out.println("Give me a file to read: ");
+        String fpStr = s.nextLine();
+        Path path = Paths.get(fpStr);
+        getHiddenSecrets(path.toFile());
+
     }
 }
