@@ -56,13 +56,24 @@ Your assignment is to use Built-In java classes to:
 
 * Look at the getHiddenSecrets method and identify the following parts by editing this README.md and providing your answers:
     * What is the **access modifer** (e.g. public, private, protected)?
-    * Is it a **Class method** or an **object Instance method**, how do you know?
-    * What is its **return data-type**?
-    * Does it require any **arguments** to call it, and if so, how many **parameters** and of what **data-type**?
+- The access modifer was a public.
+
+  * Is it a **Class method** or an **object Instance method**, how do you know?
+- It is a class method becuase it was a class file.
+
+  * What is its **return data-type**?
+- There is no return data type the function is a void 
+
+  * Does it require any **arguments** to call it, and if so, how many **parameters** and of what **data-type**?
+- It does require one argument which is called File and the data type is a file
+
 * Scan line by line through the code and try to determine how it works?
     * What is familiar to you?
+- The stuff that is familiar to me is the System.out.println(); function which just prints out the data for you but the rest I am not really understanding it 
     * What is not familiar to you?
+- How it is printing out all the data.
     * Do the **for** loops make sense, and if so, tell me what you think they do?
+- I think that the for loops is grabbing the data from the directories 
 
 ## PART 4 - Turn in
 
