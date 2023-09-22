@@ -7,6 +7,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.Scanner;
 
 // PUT YOUR IMPORTS HERE
 
@@ -37,10 +38,13 @@ public class HiddenSecrets {
     }
 
     public static void main(String[] args) {
-        // Put your code to request a file path,
-        // read in a string from System.in,
-        // convert that string into A Path type using Paths class,
-        // and call the getHiddenSecrets method to get the file's meta-data
-        // HERE
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("All Your Metadata Are Belong To Us \nFilename?"); //prompt the user
+        String filePath = scanner.nextLine();                               //user input
+
+        File file = new File(filePath);                                     //File object created
+        getHiddenSecrets(file);                                             //File object passed through metadata scrapper
+        scanner.close();                                                    //beep boop good bye
     }
 }
