@@ -8,9 +8,21 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
-// PUT YOUR IMPORTS HERE
+import java.nio.file.Paths;
+import java.util.Scanner;
+import java.nio.file.Path;
 
 public class HiddenSecrets {
+    public static class PathToFile {
+        public static void main(String[] args) {
+            Path path = Path.of("C:/Users/olivi/OneDrive/Documents/Documents/Object oriented programming/OllieTheOtter.jpg/");
+
+            File file = path.toFile();
+
+            System.out.println("File: " + file.getAbsolutePath());
+        }
+    }
+
     public static void getHiddenSecrets(File file) {
         try {
             Metadata metadata = ImageMetadataReader.readMetadata(
@@ -37,10 +49,19 @@ public class HiddenSecrets {
     }
 
     public static void main(String[] args) {
-        // Put your code to request a file path,
-        // read in a string from System.in,
-        // convert that string into A Path type using Paths class,
-        // and call the getHiddenSecrets method to get the file's meta-data
-        // HERE
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Please enter a file path: ");
+
+        String filePathString = scanner.nextLine();
+
+        Path path = Paths.get(filePathString);
+
+        File file = path.toFile();
+        if (file.exists()) {
+            getHiddenSecrets(file);
+        } else {
+            System.out.println("File does not exist: " + path);
+        }
     }
 }

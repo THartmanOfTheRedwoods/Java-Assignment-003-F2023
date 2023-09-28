@@ -55,14 +55,14 @@ Your assignment is to use Built-In java classes to:
 ## PART 3 - Code Scanning and Interpretation
 
 * Look at the getHiddenSecrets method and identify the following parts by editing this README.md and providing your answers:
-    * What is the **access modifer** (e.g. public, private, protected)?
-    * Is it a **Class method** or an **object Instance method**, how do you know?
-    * What is its **return data-type**?
-    * Does it require any **arguments** to call it, and if so, how many **parameters** and of what **data-type**?
-* Scan line by line through the code and try to determine how it works?
-    * What is familiar to you?
-    * What is not familiar to you?
-    * Do the **for** loops make sense, and if so, tell me what you think they do?
+    * What is the **access modifer** (e.g. public, private, protected)? public 
+    * Is it a **Class method** or an **object Instance method**, how do you know? object instance method because Hidden is capitalized.
+    * What is its **return data-type**? the void means it doesn't return a value. 
+    * Does it require any **arguments** to call it, and if so, how many **parameters** and of what **data-type**? One argument which is the parameter type of File. (file)
+* Scan line by line through the code and try to determine how it works? It first establishes the path to the file, asks to enter the file path, and after you enter it there is a detailed description about this jpg file. It also tells you what files exist and which do not. 
+    * What is familiar to you? there is concatenation being used,catch isb being used to find errors or files that don't exist. void is used to show that there isn't any return.
+    * What is not familiar to you?I know what it does but I am not familiar with image metadata reader 
+    * Do the **for** loops make sense, and if so, tell me what you think they do? I think they iterate specific metadata pertaining to the image, extract and format info, and print. 
 
 ## PART 4 - Turn in
 
