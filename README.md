@@ -58,6 +58,7 @@ Your assignment is to use Built-In java classes to:
     * What is the **access modifer** (e.g. public, private, protected)?
     * Is it a **Class method** or an **object Instance method**, how do you know?
     * What is its **return data-type**?
+      *    *The void type is used to declare that a method does not return a value.*
     * Does it require any **arguments** to call it, and if so, how many **parameters** and of what **data-type**?
 * Scan line by line through the code and try to determine how it works?
     * What is familiar to you?
