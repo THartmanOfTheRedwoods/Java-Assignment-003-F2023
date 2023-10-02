@@ -47,10 +47,20 @@ Your assignment is to use Built-In java classes to:
 1. Pass the file object as an argument to the given **getHiddenSecrets** method.
 1. Run the program and type in the path for our sample image, and record the GPS coordinates in the output.
   ![Ollie the Otter Image](images/OllieTheOtter.jpg)
-    * HINT: the path can be relative to the project directory, maybe use the string in the example above :-)
+- I'm unsure what you meant by record GPS input, the image I uploaded did not have any attached, maybe due to my screenshotting software or file extension. I'm not too familiar with exif data, but I believe it only works for JPEGs? I do about everything in PNG.
+- Regardless, here's the extracted GPS data from OllieTheOtter.JPG
+```
+  [GPS] - GPS Latitude Ref = N
+  [GPS] - GPS Latitude = 40° 46' 37.46"
+  [GPS] - GPS Longitude Ref = W
+  [GPS] - GPS Longitude = -124° 8' 41.55"
+```
+      * HINT: the path can be relative to the project directory, maybe use the string in the example above :-)
 1. Look up the latitude and longitude coordinates in any online map you can find via Google.
 1. Screenshot the map and add it into the **images** folder of this project.
 1. Last add image markdown below this line to load your map image (Hint: Example image Markdown is just a couple lines above this).
+
+![CR Map Image](./images/crmap.png)
 
 ## PART 3 - Code Scanning and Interpretation
 
@@ -63,6 +73,20 @@ Your assignment is to use Built-In java classes to:
     * What is familiar to you?
     * What is not familiar to you?
     * Do the **for** loops make sense, and if so, tell me what you think they do?
+
+1. The access modifier for *getHiddenSecrets* is public.
+2. I believe it is a class method, being static, and since we do not need to create an object to run it. This is something I am still not fully familiar with, and would like more clarification on.
+3. The return type is void, no expected return value.
+4. getHiddenSecrets requires one file-type input to function.
+
+- I believe I recognize the catch sequences from our Archimedes assignment, which I believe was a failsafe to exit a program when conditions are met
+- I'm unfamiliar with "try"
+- The nested for loops seem relatively understandable, I don't understand some of the arguments inside of them, but it looks as though it:
+1. Attempts to parse a file in which to run a readMetadata method
+2. Parses directory? I'm unsure how powerful this would be on its own without user input, and why you would need a loop for it. Does it scan several directories?
+3. Parses tags and prints them in a formatted line for each tag recognized
+4. Prints an error when an error is returned through System(?)
+5. Kills program and prints an error when filename is not something on disk, when the file cannot be read to completion, or the file/metadata is corrupt
 
 ## PART 4 - Turn in
 
