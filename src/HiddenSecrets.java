@@ -30,7 +30,7 @@ public class HiddenSecrets {
                     }
                 }
             }
-        } catch (FileNotFoundException fnfe) {
+        } catch (FileNotFoundException fileNotFoundException) {
             System.out.println("That file does not exist.");
         } catch (IOException ioe) {
             System.out.println("Problem reading from file stream.");
