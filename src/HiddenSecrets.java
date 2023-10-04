@@ -54,10 +54,10 @@ public class HiddenSecrets {
         // read in a string from System.in,
         Scanner read = new Scanner(System.in);
         // convert that string into A Path type using Paths class,
-        String A = read.next();
-        Path path = (Path)Paths.get(A);
+        String filePath = read.nextLine();
+        Path path = Paths.get(filePath);
         // and call the getHiddenSecrets method to get the file's meta-data
         // HERE
-        getHiddenSecrets(path.toFile());
+        HiddenSecrets.getHiddenSecrets(path.toFile());
     }
 }

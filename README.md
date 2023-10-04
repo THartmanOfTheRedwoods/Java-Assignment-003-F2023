@@ -58,13 +58,12 @@ Your assignment is to use Built-In java classes to:
 * Look at the getHiddenSecrets method and identify the following parts by editing this README.md and providing your answers:
     * What is the **access modifer** (e.g. public, private, protected)?
       *     **public**
-    * Is it a **Class method** or an **object Instance method**, how do you know?
-      *      **I believe it is object Instance method: because it is calling getHiddenObjects, but I don't feel like I have a clear understanding**    
-    * What is its **return data-type**?
-      *    *The void type is used to declare that a method does not return a value.*
-        *     **void: it does not return a value**
-    * Does it require any **arguments** to call it, and if so, how many **parameters** and of what **data-type**?
-      *      **Yes, If seem to call one argument the (File file)**
+        * Is it a **Class method** or an **object Instance method**, how do you know?
+          *     **Class Method because getHiddenSecrets is static**
+        *    *The void type is used to declare that a method does not return a value.*
+               *     **void: it does not return a value**
+        * Does it require any **arguments** to call it, and if so, how many **parameters** and of what **data-type**?
+          *      **Yes, If seem to call one argument the (File file)**
 * Scan line by line through the code and try to determine how it works?
     * What is familiar to you?
     * What is not familiar to you?
