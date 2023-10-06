@@ -4,23 +4,33 @@
 
 ## PART 1 - Build an External Package (JAR short for Java Archive)
 
-A Jar is really just a Zip file with some added Metadata (i.e. data about data). They are organized much the same way file systems are organized, think folders nested in folders with importable Java classes being the files in those folders. So if you have a folder hierarchy like **edu/redwoods/cis12** and you had several Java files in the cis12 subfolder named **Class1** and **Class2** you could Zip it up into a **.jar** file, import it into your IntelliJ project, and then import those classes like so:
+A Jar is really just a Zip file with some added Metadata (i.e. data about data). 
+They are organized much the same way file systems are organized, 
+think folders nested in folders with importable Java classes being the files in those folders. 
+So if you have a folder hierarchy like **edu/redwoods/cis12** and you had several Java files 
+in the cis12 subfolder named **Class1** and **Class2** you could Zip it up into a **.jar** file, 
+import it into your IntelliJ project, and then import those classes like so:
 
 ```
 import edu.redwoods.cis12.Class1;
 import edu.redwoods.cis12.Class1;
 ```
 
-This is a slight over-simplification because you would also have to include a **package** directive at the top of your Java classes, and you should add additional package metadata, but the comparison is pretty close to reality.
+This is a slight over-simplification because you would also have to include a **package** 
+directive at the top of your Java classes, and you should add additional package metadata, 
+but the comparison is pretty close to reality.
 
 
-1. Watch the below linked video, and follow along on how we build a **Java Archive** artifact (**jar**) from a GitHub project.
+1. Watch the below linked video, and follow along on how we build a **Java Archive** 
+2. artifact (**jar**) from a GitHub project.
     * [Jar file build from GitHub Project](https://redwoods.us-west-2.instructuremedia.com/embed/517c63e3-9624-4880-a46f-7eea3efe338a)
-1. If you didn't already, attempt to build the artifact/jar file while watching the video, try to build **the jar file** yourself now!
+1. If you didn't already, attempt to build the artifact/jar file while watching the video, 
+2. try to build **the jar file** yourself now!
     * [Metadata Extractor Code on GitHub](https://github.com/drewnoakes/metadata-extractor)
 1. Watch the below linked video, and follow along to import an external **jar** file into your project!
     * [Import External Jar into your Project](https://redwoods.us-west-2.instructuremedia.com/embed/92f5cfd8-59f3-48b8-bbfe-a16c664625ac)
-1. If your artifact build/creation step was successful, see if you can import your build of the metadata jar file into Java-Assignment-003 after you start PART 2 below!
+1. If your artifact build/creation step was successful, see if you can import your build of the
+2. metadata jar file into Java-Assignment-003 after you start PART 2 below!
 
 ## PART 2 - Implementation
 
@@ -33,7 +43,8 @@ Just like you do every week now!!!
 
 Your assignment is to use Built-In java classes to:
 
-1. Import the following java Built-In classes from the **java.nio** and **java.util** packages respectively.
+1. Import the following java Built-In classes from the **java.nio** and **java.util** 
+2. packages respectively.
     * ```
       java.nio.file.Paths;
       java.util.Scanner;
@@ -43,27 +54,37 @@ Your assignment is to use Built-In java classes to:
      * HINT 1: Create a **Scanner** object instance and use it to read a string.
      * HINT 2: Use **Paths** class to get a path from your input!
          * Google java.nio.file.Paths for help OR [Look for examples HERE](https://www.geeksforgeeks.org/java-nio-file-paths-class-in-java/)
-1. From your path object call a **method** that converts the file path to a **File** type object (**Cause that's what the provided getHiddenSecret method declares as its parameters**).
+1. From your path object call a **method** that converts the file path to a **File** type object 
+2. (**Cause that's what the provided getHiddenSecret method declares as its parameters**).
 1. Pass the file object as an argument to the given **getHiddenSecrets** method.
 1. Run the program and type in the path for our sample image, and record the GPS coordinates in the output.
   ![Ollie the Otter Image](images/OllieTheOtter.jpg)
     * HINT: the path can be relative to the project directory, maybe use the string in the example above :-)
+   * N 40° 46' 37.46" , W -124° 8' 41.55"
 1. Look up the latitude and longitude coordinates in any online map you can find via Google.
 1. Screenshot the map and add it into the **images** folder of this project.
 1. Last add image markdown below this line to load your map image (Hint: Example image Markdown is just a couple lines above this).
+   ![Map Screen Shot](images/Screenshot 2023-09-12 113733.png)
 
 ## PART 3 - Code Scanning and Interpretation
 
 * Look at the getHiddenSecrets method and identify the following parts by editing this README.md and providing your answers:
-    * What is the **access modifer** (e.g. public, private, protected)?
+    * What is the **access modifer** (e.g. public, private, protected)? 
+    * <b> public </b>
     * Is it a **Class method** or an **object Instance method**, how do you know?
+    * <b> object instance method</b>
     * What is its **return data-type**?
-    * Does it require any **arguments** to call it, and if so, how many **parameters** and of what **data-type**?
+    * void
+    * Does it require any **arguments** to call it, and if so, 
+    * how many **parameters** and of what **data-type**?
+    * 1, file 
 * Scan line by line through the code and try to determine how it works?
     * What is familiar to you?
+    * the basics such as scanner, importing, having a class etc.
     * What is not familiar to you?
+    * everything under that haha
     * Do the **for** loops make sense, and if so, tell me what you think they do?
-
+no
 ## PART 4 - Turn in
 
 ### Same as the last 2 Weeks!
