@@ -64,6 +64,14 @@ Your assignment is to use Built-In java classes to:
     * What is not familiar to you?
     * Do the **for** loops make sense, and if so, tell me what you think they do?
 
+## Part 3 - Answers
+* Access modifier is Public
+* It is a class method because it is declared as a public class and is static
+* Return data-type is void
+* It requires a file path to call it
+* what is familiar to me is the System.out and the format modifiers
+* what is not familiar to me is the catch if and for parts as well as it look like you declared a new object FileInputStream(file)
+* No the for loops don't really make sense to me 
 ## PART 4 - Turn in
 
 ### Same as the last 2 Weeks!
