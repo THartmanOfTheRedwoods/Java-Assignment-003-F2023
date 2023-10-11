@@ -11,6 +11,9 @@ import java.io.IOException;
 // PUT YOUR IMPORTS HERE
 
 public class HiddenSecrets {
+    java.nio.file.Paths;
+    java.util.Scannaer;
+    java.nio.file.Paths;
     public static void getHiddenSecrets(File file) {
         try {
             Metadata metadata = ImageMetadataReader.readMetadata(
