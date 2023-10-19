@@ -9,6 +9,9 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 
 // PUT YOUR IMPORTS HERE
+import java.nio.file.Paths;
+import java.util.Scanner;
+import java.nio.file.Path;
 
 public class HiddenSecrets {
     public static void getHiddenSecrets(File file) {
@@ -39,8 +42,13 @@ public class HiddenSecrets {
     public static void main(String[] args) {
         // Put your code to request a file path,
         // read in a string from System.in,
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("please input a file path: ");
+        String file = scanner.nextLine();
         // convert that string into A Path type using Paths class,
+        Path path = Paths.get(file);
         // and call the getHiddenSecrets method to get the file's meta-data
+        getHiddenSecrets(path.toFile());
         // HERE
     }
 }
