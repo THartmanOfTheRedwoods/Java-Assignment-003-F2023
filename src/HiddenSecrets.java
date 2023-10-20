@@ -1,3 +1,4 @@
+//  I turned this in on school pc !!
 import com.drew.imaging.ImageProcessingException;
 import com.drew.metadata.Metadata;
 import com.drew.metadata.Directory;
